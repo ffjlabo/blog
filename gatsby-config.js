@@ -1,19 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `ふじを録`,
-    description: `techブログ`,
+    description: `ふじを録`,
     author: `@ffjlabo`,
+    image: `images/`
   },
   plugins: [
     `gatsby-plugin-styled-jsx`,
     `gatsby-plugin-react-helmet`,
-    /*{
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },*/
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
