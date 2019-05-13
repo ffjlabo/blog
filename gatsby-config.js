@@ -3,7 +3,7 @@ module.exports = {
     title: `ふじを録`,
     description: `ふじを録`,
     author: `@ffjlabo`,
-    image: `images/icon.jpg`
+    image: `src/images/icon.jpg`
   },
   plugins: [
     `gatsby-plugin-styled-jsx`,
@@ -26,6 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
+        icon: 'src/images/icon.jpg'
       },
     },
     {
