@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
       const frontmatter = node.frontmatter
       const excerpt = node.excerpt
       return (
-        <Link to={frontmatter.path}>
+        <Link to={frontmatter.path} key={node.id}>
           <Item
             key={node.id}
             title={frontmatter.title}
