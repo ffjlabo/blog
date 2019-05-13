@@ -3,7 +3,7 @@ module.exports = {
     title: `ふじを録`,
     description: `ふじを録`,
     author: `@ffjlabo`,
-    image: `images/`
+    image: `images/icon.jpg`
   },
   plugins: [
     `gatsby-plugin-styled-jsx`,
