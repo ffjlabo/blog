@@ -20,12 +20,22 @@ export default props => (
         margin: 0px;
       }
 
-      .layout-sub {
-        padding: 10px;
-        margin: 30px 250px;
-        min-width: 600px;
-        border: solid #000000 3px;
+      @media screen and (max-width: 1024px) {
+        .layout-sub {
+          padding: 10px;
+          border: solid #000000 3px;
+        }
       }
+
+      @media screen and (min-width: 1025px) {
+        .layout-sub {
+          padding: 10px;
+          margin: 30px 250px;
+          min-width: 700px;
+          border: solid #000000 3px;
+        }
+      }
+
 
       footer {
         text-align: center;
