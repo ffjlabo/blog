@@ -3,10 +3,10 @@ module.exports = {
     title: `ふじを録`,
     description: `ふじを録`,
     author: `@ffjlabo`,
-    image: `src/images/icon.jpg`
+    image: `src/images/icon.jpg`,
   },
   plugins: [
-    `gatsby-plugin-styled-jsx`,
+    // `gatsby-plugin-styled-jsx`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -26,7 +26,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: 'src/images/icon.jpg'
+        icon: "src/images/icon.jpg",
       },
     },
     {
@@ -38,10 +38,10 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
-            }
+            },
           },
-        ]
-      }
+        ],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
