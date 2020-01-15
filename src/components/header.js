@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const HeaderContainer = styled.header`
   text-align: center;
+  background-color: white;
 `
 
 const Header = props => (

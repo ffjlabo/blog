@@ -4,6 +4,7 @@ import icon from "../images/icon.jpg"
 
 const FooterContainer = styled.footer`
   text-align: center;
+  background-color: white;
 `
 
 const FooterIcon = styled.div`
