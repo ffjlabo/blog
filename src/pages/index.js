@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import Item from "../components/item"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-//import { node } from "prop-types";
 
 const IndexPage = ({ data }) => (
   <Layout>
