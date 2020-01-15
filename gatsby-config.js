@@ -6,7 +6,6 @@ module.exports = {
     image: `src/images/icon.jpg`,
   },
   plugins: [
-    // `gatsby-plugin-styled-jsx`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
