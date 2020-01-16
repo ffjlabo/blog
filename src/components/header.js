@@ -6,9 +6,18 @@ const HeaderContainer = styled.header`
   background-color: white;
 `
 
+const HeaderTitile = styled.h1`
+  & > a {
+    color: black;
+    text-decoration: none;
+  }
+`
+
 const Header = props => (
   <HeaderContainer>
-    <h1>ふじを録</h1>
+    <HeaderTitile>
+      <a href="/">ふじを録</a>
+    </HeaderTitile>
   </HeaderContainer>
 )
 

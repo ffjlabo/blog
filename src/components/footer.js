@@ -7,21 +7,19 @@ const FooterContainer = styled.footer`
   background-color: white;
 `
 
-const FooterIcon = styled.div`
-  &::before {
-    content: "";
-    display: inline-block;
-    background-image: url(${icon});
-    background-size: contain;
+const FooterLink = styled.a`
+  text-decoration: none;
+  img {
     width: 50px;
     height: 50px;
-    vertical-align: middle;
   }
 `
 
 const Footer = props => (
   <FooterContainer>
-    <FooterIcon />
+    <FooterLink href="/">
+      <img src={icon} />
+    </FooterLink>
   </FooterContainer>
 )
 
