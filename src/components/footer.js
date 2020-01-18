@@ -15,8 +15,8 @@ const FooterLink = styled.a`
   }
 `
 
-const Footer = props => (
-  <FooterContainer>
+const Footer = ({ className }) => (
+  <FooterContainer className={className}>
     <FooterLink href="/">
       <img src={icon} />
     </FooterLink>
