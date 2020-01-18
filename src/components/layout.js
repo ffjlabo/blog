@@ -5,6 +5,16 @@ import Footer from "./footer"
 
 const LayoutContainer = styled.div`
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+`
+
+const StickyFooter = styled(Footer)`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 `
 
 const LayoutBody = styled.div`
@@ -25,7 +35,7 @@ const Layout = props => (
   <LayoutContainer>
     <Header />
     <LayoutBody>{props.children}</LayoutBody>
-    <Footer />
+    <StickyFooter />
   </LayoutContainer>
 )
 
