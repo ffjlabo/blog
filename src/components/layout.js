@@ -9,16 +9,13 @@ const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  position: relative;
 `
 
 const StickyFooter = styled(Footer)`
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
 `
 
-const LayoutBody = styled.div`
+const Body = styled.div`
   padding: 10px;
 
   /* SP表示 */
@@ -38,7 +35,7 @@ const Layout = props => (
   <LayoutContainer>
     <Global />
     <Header />
-    <LayoutBody>{props.children}</LayoutBody>
+    <Body>{props.children}</Body>
     <StickyFooter />
   </LayoutContainer>
 )
