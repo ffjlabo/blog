@@ -13,7 +13,7 @@ const Titile = styled.h1`
 
 const Header = props => (
   <HeaderContainer>
-    <Link path="/">
+    <Link to="/">
       <Titile>ふじを録</Titile>
     </Link>
   </HeaderContainer>
