@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Link from "./link"
 import icon from "../images/icon.jpg"
 
 const FooterContainer = styled.footer`
@@ -7,19 +8,19 @@ const FooterContainer = styled.footer`
   background-color: white;
 `
 
-const FooterLink = styled.a`
-  text-decoration: none;
-  img {
-    width: 50px;
-    height: 50px;
-  }
+const FooterIcon = styled.img.attrs({
+  src: icon,
+  alt: "",
+})`
+  width: 50px;
+  height: 50px;
 `
 
 const Footer = ({ className }) => (
   <FooterContainer className={className}>
-    <FooterLink href="/">
-      <img src={icon} />
-    </FooterLink>
+    <Link path="/">
+      <FooterIcon />
+    </Link>
   </FooterContainer>
 )
 

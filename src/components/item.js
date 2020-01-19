@@ -5,7 +5,7 @@ import icon from "../images/icon.jpg"
 const Item = props => (
   <ItemContainer>
     <ItemBody>
-      <img src={icon} />
+      <img src={icon} alt="" />
       <OverView>
         <Date>{props.date}</Date>
         <Title>{props.title}</Title>
