@@ -10,6 +10,7 @@ const FooterContainer = styled.footer`
 
 const FooterIcon = styled.img.attrs({
   src: icon,
+  alt: "",
 })`
   width: 50px;
   height: 50px;

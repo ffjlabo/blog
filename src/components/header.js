@@ -7,13 +7,6 @@ const HeaderContainer = styled.header`
   background-color: white;
 `
 
-const HeaderLink = styled.a.attrs({
-  href: "/",
-})`
-  color: black;
-  text-decoration: none;
-`
-
 const Titile = styled.h1`
   font-weight: 200;
 `

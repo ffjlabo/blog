@@ -1,15 +1,9 @@
 import React from "react"
-import styled from "styled-components"
 import { graphql } from "gatsby"
 import Item from "../components/item"
 import Layout from "../components/layout"
 import Link from "../components/link"
 import SEO from "../components/seo"
-
-const ExtendLink = styled(Link)`
-  text-decoration: none;
-  color: #000000;
-`
 
 const IndexPage = ({ data }) => (
   <Layout>
