@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import Item from "../components/item"
 import Layout from "../components/layout"
+import Link from "../components/link"
 import SEO from "../components/seo"
 
 const ExtendLink = styled(Link)`
@@ -17,14 +18,14 @@ const IndexPage = ({ data }) => (
       const frontmatter = node.frontmatter
       const excerpt = node.excerpt
       return (
-        <ExtendLink to={frontmatter.path} key={node.id}>
+        <Link to={frontmatter.path} key={node.id}>
           <Item
             key={node.id}
             title={frontmatter.title}
             abstract={excerpt}
             date={frontmatter.date}
           />
-        </ExtendLink>
+        </Link>
       )
     })}
   </Layout>
