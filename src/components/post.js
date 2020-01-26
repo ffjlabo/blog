@@ -6,6 +6,7 @@ const PostContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #f2f1f3;
+  width: 100%;
   box-shadow: 10px 10px 12px rgba(204, 204, 204, 0.5),
     -10px -10px 12px rgba(255, 255, 255, 0.5);
 `
@@ -13,6 +14,7 @@ const PostContainer = styled.div`
 const PostBody = styled.div`
   background-color: #ffffff;
   box-shadow: 5px 5px 12px rgba(204, 204, 204, 0.5);
+  width: 100%;
   padding: 10px;
   margin: 10px;
 `

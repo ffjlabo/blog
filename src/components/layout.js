@@ -7,6 +7,7 @@ import Global from "./global"
 const LayoutContainer = styled.div`
   margin: 0px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   min-height: 100vh;
 `
@@ -26,8 +27,9 @@ const Body = styled.div`
 
   /* PC表示 */
   @media screen and (min-width: 1025px) {
-    margin: 10px 250px;
-    min-width: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 800px;
   }
 `
 

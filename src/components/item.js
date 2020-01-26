@@ -17,6 +17,7 @@ const Item = props => (
 
 const ItemContainer = styled.div`
   margin: 10px auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -5,6 +5,7 @@ import Link from "./link"
 const HeaderContainer = styled.header`
   text-align: center;
   background-color: white;
+  width: 100%;
 `
 
 const Titile = styled.h1`
