@@ -18,7 +18,7 @@ const FooterIcon = styled.img.attrs({
 
 const Footer = ({ className }) => (
   <FooterContainer className={className}>
-    <Link path="/">
+    <Link to="/">
       <FooterIcon />
     </Link>
   </FooterContainer>

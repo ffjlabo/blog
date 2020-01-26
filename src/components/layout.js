@@ -20,8 +20,8 @@ const Body = styled.div`
 
   /* SP表示 */
   @media screen and (max-width: 1024px) {
-    margin-top 5px;
-    margin-bottom 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   /* PC表示 */
