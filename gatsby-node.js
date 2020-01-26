@@ -7,34 +7,33 @@
 // You can delete this file if you're not using it
 const path = require("path")
 exports.createPages = ({ graphql, actions }) => {
-    const { createPage } = actions
-    return graphql(`
-        query {
-        allMarkdownRemark {
-            edges {
-            node {
-                id
-                frontmatter {
-                    title
-                    path
-                    date
-                }
-                html
+  const { createPage } = actions
+  return graphql(`
+    query {
+      allMarkdownRemark {
+        edges {
+          node {
+            id
+            frontmatter {
+              path
             }
-            }
+          }
         }
-        }
-    `).then((result) => {
-        result.data.allMarkdownRemark.edges.forEach(({node}) => {
-            createPage({
-                path: node.frontmatter.path,
-                component: path.resolve("src", "components", "blog-post.js"),
-                context: {
-                    id: node.id
-                }
-            })
+      }
+    }
+  `)
+    .then(result => {
+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        createPage({
+          path: node.frontmatter.path,
+          component: path.resolve("src", "components", "blog-post.js"),
+          context: {
+            id: node.id,
+          },
         })
-    }).catch((error) => {
-        console.log(error)
+      })
+    })
+    .catch(error => {
+      console.log(error)
     })
 }
