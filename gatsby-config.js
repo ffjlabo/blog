@@ -1,8 +1,18 @@
+let baseUrl = process.env["DEPLOY_PRIME_URL"]
+if (process.env["CONTEXT"] === "production") {
+  baseUrl = process.env["URL"]
+}
+
+if (baseUrl === undefined) {
+  baseUrl = ""
+}
+
 module.exports = {
   siteMetadata: {
     title: `ふじを録`,
     description: `日々の備忘録です`,
     author: `@ffjlabo`,
+    baseURL: baseUrl,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

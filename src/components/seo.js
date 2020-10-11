@@ -20,20 +20,12 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            baseURL
           }
         }
       }
     `
   )
-
-  let baseUrl = process.env["DEPLOY_PRIME_URL"]
-  if (process.env["CONTEXT"] === "production") {
-    baseUrl = process.env["URL"]
-  }
-
-  if (baseUrl === undefined) {
-    baseUrl = ""
-  }
 
   const metaDescription = description || site.siteMetadata.description
 
@@ -63,7 +55,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: baseUrl + ogImage,
+          content: site.siteMetadata.baseURL + ogImage,
         },
         {
           name: `twitter:card`,
@@ -83,7 +75,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: baseUrl + ogImage,
+          content: site.siteMetadata.baseURL + ogImage,
         },
       ]
         .concat(
