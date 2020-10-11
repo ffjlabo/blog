@@ -7,7 +7,10 @@ import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="記事一覧: ふじを録"
+      keywords={[`gatsby`, `application`, `react`]}
+    />
     {data.allMarkdownRemark.edges.map(({ node }) => {
       const frontmatter = node.frontmatter
       const excerpt = node.excerpt
