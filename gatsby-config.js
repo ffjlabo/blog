@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `ふじを録`,
-    description: `ふじをの備忘録`,
+    description: `日々の備忘録です`,
     author: `@ffjlabo`,
     image: `src/images/icon_fujisan.png`,
   },
