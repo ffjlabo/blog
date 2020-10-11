@@ -26,6 +26,15 @@ function SEO({ description, lang, meta, keywords, title }) {
     `
   )
 
+  let baseUrl = process.env["DEPLOY_PRIME_URL"]
+  if (process.env["CONTEXT"] === "production") {
+    baseUrl = process.env["URL"]
+  }
+
+  if (baseUrl === undefined) {
+    baseUrl = ""
+  }
+
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -54,7 +63,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: ogImage,
+          content: baseUrl + ogImage,
         },
         {
           name: `twitter:card`,
@@ -74,7 +83,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: ogImage,
+          content: baseUrl + ogImage,
         },
       ]
         .concat(
