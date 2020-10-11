@@ -3,7 +3,6 @@ module.exports = {
     title: `ふじを録`,
     description: `日々の備忘録です`,
     author: `@ffjlabo`,
-    image: `src/images/icon_fujisan.png`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
