@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `ふじを録`,
-    description: `ふじを録`,
+    description: `日々の備忘録です`,
     author: `@ffjlabo`,
-    image: `src/images/icon.jpg`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -40,6 +39,9 @@ module.exports = {
               classPrefix: "language-",
             },
           },
+          {
+            resolve: `gatsby-remark-images`,
+          },
         ],
       },
     },
@@ -48,16 +50,6 @@ module.exports = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/blog`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-          },
-        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
