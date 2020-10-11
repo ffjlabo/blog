@@ -10,9 +10,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     query {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: ASC }
-      ) {
+      allMarkdownRemark {
         edges {
           node {
             id
@@ -25,7 +23,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
   `)
     .then(result => {
-      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      result.data.allMarkdownRemark.edges.map(({ node }) => {
         createPage({
           path: node.frontmatter.path,
           component: path.resolve("src", "components", "blog-post.js"),

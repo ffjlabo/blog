@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
 // ページタイトル、リンク、概要を取得
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           id
